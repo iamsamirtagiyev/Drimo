@@ -201,6 +201,8 @@ nav .nav-wrapper .menu-icon {
   gap: 30px;
 }
 .services .services-wrapper .card-list .card {
+  border: solid 1px rgba(107, 109, 111, 0.1);
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,6 +232,44 @@ nav .nav-wrapper .menu-icon {
 }
 .services .services-wrapper .card-list .card .info p {
   color: #6b6d6f;
+}
+.services .services-wrapper .card-list .card .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.services .services-wrapper .card-list .card .buttons button {
+  font-size: 18px;
+  background: #fc6428;
+  color: #fff;
+  padding: 10px 30px;
+}
+.services .services-wrapper .card-list .card .buttons button:hover {
+  background: #ff4800;
+}
+.services .services-wrapper .card-list .card .buttons a {
+  color: #fff;
+}
+.services .services-wrapper .card-list .card button {
+  width: 100%;
+  font-size: 18px;
+  background: #fc6428;
+  color: #fff;
+  padding: 10px 30px;
+}
+.services .services-wrapper .card-list .card button:hover {
+  background: #ff4800;
+}
+.services .services-wrapper button {
+  width: 100%;
+  font-size: 18px;
+  background: #fc6428;
+  color: #fff;
+  padding: 10px 30px;
+}
+.services .services-wrapper button:hover {
+  background: #ff4800;
 }
 
 .client {
@@ -445,6 +485,121 @@ footer .footer {
   margin-left: 20px;
 }
 .add .add-wrapper form a {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.update {
+  min-height: 100vh;
+  width: 100%;
+}
+.update .update-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.update .update-wrapper form {
+  background: #7db9e8;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.update .update-wrapper form input[type=file] {
+  display: none;
+}
+.update .update-wrapper form label {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.update .update-wrapper form label i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 999px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 50px;
+}
+.update .update-wrapper form label:hover i {
+  opacity: 1;
+}
+.update .update-wrapper form label img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 999px;
+}
+.update .update-wrapper form input {
+  font-size: 18px;
+  width: 100%;
+  padding: 10px 20px;
+}
+.update .update-wrapper form button {
+  padding: 10px 20px;
+  background: #fc6428;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.update .update-wrapper form a {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.details {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details .container .details-wrapper {
+  width: 100%;
+  max-width: 600px;
+  background: #7db9e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+.details .container .details-wrapper img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.details .container .details-wrapper button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fc6428;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.details .container .details-wrapper a {
   color: #fff;
   padding: 10px 20px;
 }

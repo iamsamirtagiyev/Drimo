@@ -176,6 +176,8 @@ nav {
             gap: 30px;
 
             .card {
+                border: solid 1px rgba($color: $text-gray , $alpha: .1);
+                padding: 20px;
                 @include flex(center, center);
                 gap: 30px;
                 flex-direction: column;
@@ -206,6 +208,46 @@ nav {
                         color: $text-gray;
                     }
                 }
+
+                .buttons {
+                    @include flex(center, center);
+                    gap: 20px;
+                    button {
+                        font-size: 18px;
+                        background: $secondary-color;
+                        color: $text-white;
+                        padding: 10px 30px;
+
+                        &:hover {
+                            background: #ff4800;
+                        }
+                    }
+                    a{
+                        color: $text-white;
+                    }
+                }
+                button {
+                    width: 100%;
+                    font-size: 18px;
+                    background: $secondary-color;
+                    color: $text-white;
+                    padding: 10px 30px;
+
+                    &:hover {
+                        background: #ff4800;
+                    }
+                }
+            }
+        }
+        button {
+            width: 100%;
+            font-size: 18px;
+            background: $secondary-color;
+            color: $text-white;
+            padding: 10px 30px;
+
+            &:hover {
+                background: #ff4800;
             }
         }
     }
@@ -367,6 +409,7 @@ footer {
 .add {
     min-height: 100vh;
     width: 100%;
+
     .add-wrapper {
         min-height: 100vh;
         width: 100%;
@@ -391,7 +434,8 @@ footer {
                 position: relative;
                 width: 150px;
                 height: 150px;
-                i{
+
+                i {
                     position: absolute;
                     width: 100%;
                     height: 100%;
@@ -405,7 +449,7 @@ footer {
                     font-size: 50px;
                 }
 
-                &:hover i{
+                &:hover i {
                     opacity: 1;
                 }
 
@@ -422,14 +466,129 @@ footer {
                 width: 100%;
                 padding: 10px 20px;
             }
-            button{
+
+            button {
                 padding: 10px 20px;
                 background: $secondary-color;
                 color: $text-white;
                 font-size: 18px;
                 margin-left: 20px;
             }
-            a{
+
+            a {
+                color: $text-white;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+.update {
+    min-height: 100vh;
+    width: 100%;
+
+    .update-wrapper {
+        min-height: 100vh;
+        width: 100%;
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 30px;
+
+        form {
+            background: $primary-color;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px 50px;
+            @include flex(center, center);
+            flex-direction: column;
+            gap: 30px;
+
+            input[type="file"] {
+                display: none;
+            }
+
+            label {
+                position: relative;
+                width: 150px;
+                height: 150px;
+
+                i {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba($color: #000000, $alpha: .5);
+                    border-radius: 999px;
+                    opacity: 0;
+                    top: 0;
+                    left: 0;
+                    @include flex(center, center);
+                    color: $text-white;
+                    font-size: 50px;
+                }
+
+                &:hover i {
+                    opacity: 1;
+                }
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 999px;
+                }
+            }
+
+            input {
+                font-size: 18px;
+                width: 100%;
+                padding: 10px 20px;
+            }
+
+            button {
+                padding: 10px 20px;
+                background: $secondary-color;
+                color: $text-white;
+                font-size: 18px;
+                margin-left: 20px;
+            }
+
+            a {
+                color: $text-white;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+.details{
+    width: 100%;
+    min-height: 100vh;
+    @include flex(center, center);
+    .container{
+        @include flex(center, center);
+        .details-wrapper{
+            width: 100%;
+            max-width: 600px;
+            background: $primary-color;
+            @include flex(center, center);
+            flex-direction: column;
+            text-align: center;
+            color: $text-white;
+            padding: 30px;
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }
+            button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background: $secondary-color;
+                color: $text-white;
+                font-size: 18px;
+                margin-left: 20px;
+            }
+
+            a {
                 color: $text-white;
                 padding: 10px 20px;
             }
