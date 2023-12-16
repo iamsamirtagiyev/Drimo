@@ -388,13 +388,32 @@ footer {
             }
 
             label {
+                position: relative;
                 width: 150px;
                 height: 150px;
+                i{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba($color: #000000, $alpha: .5);
+                    border-radius: 999px;
+                    opacity: 0;
+                    top: 0;
+                    left: 0;
+                    @include flex(center, center);
+                    color: $text-white;
+                    font-size: 50px;
+                }
+
+                &:hover i{
+                    opacity: 1;
+                }
 
                 img {
                     width: 150px;
                     height: 150px;
                     object-fit: cover;
+                    border-radius: 999px;
                 }
             }
 
@@ -403,11 +422,16 @@ footer {
                 width: 100%;
                 padding: 10px 20px;
             }
-            .buttons{
-                @include felx(center, center);
-                button{
-                    background: red;
-                }
+            button{
+                padding: 10px 20px;
+                background: $secondary-color;
+                color: $text-white;
+                font-size: 18px;
+                margin-left: 20px;
+            }
+            a{
+                color: $text-white;
+                padding: 10px 20px;
             }
         }
     }

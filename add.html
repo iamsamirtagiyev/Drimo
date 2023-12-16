@@ -37,12 +37,13 @@
                     <input type="file" id="file" accept="image/*">
                     <label for="file">
                         <img src="./assets/images/user.webp">
+                        <i class="bx bx-camera"></i>
                     </label>
                     <input type="text" class="add-name" placeholder="Name">
                     <input type="text" class="add-desc" placeholder="Description">
                     <div class="buttons">
-                        <button>Add Item</button>
-                        <button><a href="index.html">Cancel</a></button>
+                        <button><a href="index.html">Back</a></button>
+                        <button class="save-btn">Add Item</button>
                     </div>
                 </form>
             </div>
@@ -53,6 +54,9 @@
             <div class="footer">Copyright ©2023 All rights reserved | This template is made with  by Colorlib</div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/module.js"></script>
+    <script type="module" src="./assets/js/add.js"></script>
 </body>
 
 </html>

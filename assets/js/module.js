@@ -18,3 +18,13 @@ const showData = async function(){
     let response = await axios.get(api)
     return response.data
 }
+
+const addData = async function(obj){
+    let response = await axios.post(api, obj)
+    return response.data
+}
+
+const updateData = async function(obj){
+    let response = await axios.patch(api, obj)
+    return response.data
+}
