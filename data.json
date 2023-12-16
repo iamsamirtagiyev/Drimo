@@ -1,0 +1,52 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "image": "./assets/images/ss-icon-1.png",
+            "name": "Cloud Hosting",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+        },
+        {
+            "id": 2,
+            "image": "./assets/images/ss-icon-2.png",
+            "name": "Web Hosting",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+        },
+        {
+            "id": 3,
+            "image": "./assets/images/ss-icon-3.png",
+            "name": "Share Hosting",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+        },
+        {
+            "id": 4,
+            "image": "./assets/images/ss-icon-4.png",
+            "name": "VPS Server",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+        },
+        {
+            "id": 5,
+            "image": "./assets/images/ss-icon-5.png",
+            "name": "WHCMS",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+        },
+        {
+            "id": 6,
+            "image": "./assets/images/ss-icon-6.png",
+            "name": "24/7 Support",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+        },
+        {
+            "id": 7,
+            "image": "./assets/images/ss-icon-7.png",
+            "name": "Windows Hosting",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+        },
+        {
+            "id": 1,
+            "image": "./assets/images/ss-icon-8.png",
+            "name": "Database Hosting",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+        }
+    ]
+}
