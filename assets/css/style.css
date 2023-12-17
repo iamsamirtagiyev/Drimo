@@ -201,8 +201,6 @@ nav .nav-wrapper .menu-icon {
   gap: 30px;
 }
 .services .services-wrapper .card-list .card {
-  border: solid 1px rgba(107, 109, 111, 0.1);
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
